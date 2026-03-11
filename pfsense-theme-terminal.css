@@ -118,3 +118,16 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--terminal-green);
 }
+
+.breadcrumb {
+    background-color: #050505 !important;
+    border: 1px solid var(--terminal-dim) !important;
+}
+
+.breadcrumb > li, .breadcrumb > li a {
+    color: var(--terminal-green) !important;
+}
+
+.header-icon-link {
+    color: var(--terminal-green) !important;
+}
