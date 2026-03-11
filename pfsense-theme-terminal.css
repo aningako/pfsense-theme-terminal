@@ -1,0 +1,120 @@
+@import url("/css/pfSense.css");
+
+:root {
+    --black: #000000;
+    --near-black: #0a0a0a;
+    --terminal-green: #00ff41;
+    --terminal-dim: #008f11;
+    --terminal-border: #111111;
+    --gray-dark: #050505;
+    
+    --primary: var(--terminal-green);
+    --secondary: #1a1a1a;
+    --success: var(--terminal-green);
+    --info: #00bcff;
+    --warning: #ffcc00;
+    --danger: #ff3333;
+    
+    --bs-body-bg: var(--black);
+    --bs-body-color: var(--terminal-green);
+    --bs-tertiary-bg: var(--near-black);
+    --bs-border-color: var(--terminal-border);
+    --bs-heading-color: var(--terminal-green);
+}
+
+body {
+    background-color: var(--black) !important;
+    color: var(--terminal-green);
+    font-family: 'Courier New', Courier, monospace !important;
+    text-shadow: 0 0 2px rgba(0, 255, 65, 0.3);
+}
+
+
+.navbar-pf-alt, .navbar-inverse, .navbar {
+    background-color: var(--black) !important;
+    border-bottom: 1px solid var(--terminal-green) !important;
+}
+
+.nav > li > a {
+    color: var(--terminal-dim) !important;
+}
+
+.nav > li > a:hover, .nav > li.active > a {
+    color: var(--terminal-green) !important;
+    background-color: var(--near-black) !important;
+}
+
+.panel, .card {
+    background-color: var(--black) !important;
+    border: 1px solid var(--terminal-dim) !important;
+    border-radius: 0 !important;
+}
+
+.panel-heading, .card-header {
+    background-color: var(--near-black) !important;
+    color: var(--terminal-green) !important;
+    border-bottom: 1px solid var(--terminal-dim) !important;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.form-control, select, input, textarea {
+    background-color: var(--black) !important;
+    color: var(--terminal-green) !important;
+    border: 1px solid var(--terminal-dim) !important;
+    border-radius: 0 !important;
+}
+
+.form-control:focus {
+    border-color: var(--terminal-green) !important;
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.2);
+}
+
+.table {
+    color: var(--terminal-green) !important;
+    background-color: var(--black) !important;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #050505 !important;
+}
+
+.table-hover > tbody > tr:hover {
+    background-color: #111111 !important;
+}
+
+.logo-st0, .logo-fill { fill: var(--terminal-green) !important; }
+.logo-st1 { fill: var(--terminal-dim) !important; }
+
+.btn {
+    border-radius: 0 !important;
+    text-transform: uppercase;
+}
+
+.btn-primary, .btn-default {
+    background-color: var(--black) !important;
+    color: var(--terminal-green) !important;
+    border: 1px solid var(--terminal-green) !important;
+}
+
+.btn:hover {
+    background-color: var(--terminal-green) !important;
+    color: var(--black) !important;
+}
+
+.alert {
+    border-radius: 0;
+    background-color: var(--black);
+    border: 1px solid currentColor;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: var(--black);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--terminal-dim);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--terminal-green);
+}
